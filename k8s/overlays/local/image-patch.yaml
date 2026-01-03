@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app1
+spec:
+  template:
+    spec:
+      containers:
+        - name: app1
+          image: app1:local
+          imagePullPolicy: IfNotPresent
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app2
+spec:
+  template:
+    spec:
+      containers:
+        - name: app2
+          image: app2:local
+          imagePullPolicy: IfNotPresent

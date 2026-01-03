@@ -1,0 +1,7 @@
+resources:
+  - ../../base
+
+namespace: ammars-cluster
+
+patchesStrategicMerge:
+  - image-patch.yaml
